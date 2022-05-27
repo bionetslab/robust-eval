@@ -18,20 +18,20 @@ def call_robust(path_to_graph, edge_cost_mode, node_namespace_mode, normalize_mo
         
     if normalize_mode=='BAIT_USAGE':
         if node_namespace_mode=='ENTREZ_GENE_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/gene_bait_usage.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/entrezID_baitUsage.csv'
         elif node_namespace_mode=='GENE_SYMBOL':
-            pathToStudyBiasData='../../data/edgeweightdata/gene_bait_usage.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/geneSymbol_baitUsage.csv'
         elif node_namespace_mode=='UNIPROT_PROTEIN_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/gene_bait_usage.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/uniprotID_baitUsage.csv'
         flag=int(1)
             
     elif normalize_mode=='STUDY_ATTENTION':
         if node_namespace_mode=='ENTREZ_GENE_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/study_attention.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/entrezID_studyAttention.csv'
         elif node_namespace_mode=='GENE_SYMBOL':
-            pathToStudyBiasData='../../data/edgeweightdata/study_attention.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/geneSymbol_studyAttentionn.csv'
         elif node_namespace_mode=='UNIPROT_PROTEIN_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/study_attention.csv'
+            pathToStudyBiasData='../../data/edgeweightdata/uniprotID_studyAttention.csv'
         flag=int(2)
         
     elif normalize_mode=='CUSTOM':
