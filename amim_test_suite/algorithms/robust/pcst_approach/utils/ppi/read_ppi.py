@@ -23,16 +23,17 @@ def read_ppi_biasaware(file_path: str, pathToStudyBiasData: str, flag: int):
     
     # --------------------------------
     
-    BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=',', usecols=['gene'])
+    BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=' ', usecols=['gene'])
     bias_symbol_List=list(BIASAWARE_USAGE['gene'])
+    bias_symbol_List = [str(x) for x in bias_symbol_List]
     if flag==1:
-        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=',', usecols=['bait_usage'])
+        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=' ', usecols=['bait_usage'])
         bias_usage_List=list(BIASAWARE_USAGE['bait_usage'])
     elif flag==2:
-        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=',', usecols=['study_attention'])
+        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=' ', usecols=['study_attention'])
         bias_usage_List=list(BIASAWARE_USAGE['study_attention'])
     elif flag==3:
-        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=',', usecols=['custom'])
+        BIASAWARE_USAGE=pd.read_csv(pathToStudyBiasData, sep=' ', usecols=['custom'])
         bias_usage_List=list(BIASAWARE_USAGE['custom'])
     
     NoOfGenesInBIASDATA=len(bias_symbol_List)

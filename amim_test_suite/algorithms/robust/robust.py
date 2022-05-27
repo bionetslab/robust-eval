@@ -18,29 +18,29 @@ def call_robust(path_to_graph, edge_cost_mode, node_namespace_mode, normalize_mo
         
     if normalize_mode=='BAIT_USAGE':
         if node_namespace_mode=='ENTREZ_GENE_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/entrezID_baitUsage.csv'
+            pathToStudyBiasData='./data/edgeweightdata/entrezID_baitUsage.txt'
         elif node_namespace_mode=='GENE_SYMBOL':
-            pathToStudyBiasData='../../data/edgeweightdata/geneSymbol_baitUsage.csv'
+            pathToStudyBiasData='./data/edgeweightdata/geneSymbol_baitUsage.txt'
         elif node_namespace_mode=='UNIPROT_PROTEIN_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/uniprotID_baitUsage.csv'
+            pathToStudyBiasData='./data/edgeweightdata/uniprotID_baitUsage.txt'
         flag=int(1)
             
     elif normalize_mode=='STUDY_ATTENTION':
         if node_namespace_mode=='ENTREZ_GENE_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/entrezID_studyAttention.csv'
+            pathToStudyBiasData='./data/edgeweightdata/entrezID_studyAttention.txt'
         elif node_namespace_mode=='GENE_SYMBOL':
-            pathToStudyBiasData='../../data/edgeweightdata/geneSymbol_studyAttentionn.csv'
+            pathToStudyBiasData='./data/edgeweightdata/geneSymbol_studyAttentionn.txt'
         elif node_namespace_mode=='UNIPROT_PROTEIN_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/uniprotID_studyAttention.csv'
+            pathToStudyBiasData='./data/edgeweightdata/uniprotID_studyAttention.txt'
         flag=int(2)
         
     elif normalize_mode=='CUSTOM':
         if node_namespace_mode=='ENTREZ_GENE_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/custom.csv'
+            pathToStudyBiasData='./data/edgeweightdata/custom.txt'
         elif node_namespace_mode=='GENE_SYMBOL':
-            pathToStudyBiasData='../../data/edgeweightdata/custom.csv'
+            pathToStudyBiasData='./data/edgeweightdata/custom.txt'
         elif node_namespace_mode=='UNIPROT_PROTEIN_ID':
-            pathToStudyBiasData='../../data/edgeweightdata/custom.csv'
+            pathToStudyBiasData='./data/edgeweightdata/custom.txt'
         flag=int(3)
         
     if edge_cost_mode=='UNIFORM':
