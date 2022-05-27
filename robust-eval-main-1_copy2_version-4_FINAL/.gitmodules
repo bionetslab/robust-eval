@@ -1,0 +1,3 @@
+[submodule "amim_test_suite/algorithms/robust"]
+	path = amim_test_suite/algorithms/robust
+	url = git@github.com:bionetslab/robust.git

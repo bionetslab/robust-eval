@@ -1,0 +1,5 @@
+uniprot.Q9NUX5
+uniprot.Q9NVM4
+uniprot.P62633
+uniprot.Q99729
+uniprot.O43715

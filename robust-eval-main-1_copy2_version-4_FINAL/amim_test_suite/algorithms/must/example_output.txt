@@ -1,0 +1,12 @@
+source_node	target_node
+uniprot.Q9NUX5	uniprot.Q9NVM4
+uniprot.Q9NUX5	uniprot.O95817
+uniprot.Q9NUX5	uniprot.P0DMV8
+uniprot.Q9NUX5	uniprot.P07195
+uniprot.Q9NUX5	uniprot.P52565
+uniprot.P62633	uniprot.Q99729
+uniprot.Q99729	uniprot.P07195
+uniprot.Q99729	uniprot.P52565
+uniprot.O43715	uniprot.O95817
+uniprot.O43715	uniprot.P0DMV8
+uniprot.O95817	uniprot.P0DMV8
